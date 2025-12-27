@@ -510,8 +510,8 @@
         }
      }
 
-     /* main section responsive  */
-      @media(min-width:300px)and (max-width:1024px){
+     /* main section responsive Mobile and Tablet  */
+      @media(min-width:300px)and (max-width:1023px){
         .grid-container{
             height:143vh;
             display: grid;
@@ -535,3 +535,57 @@
         }
 
     }
+       /* main section responsive Laptop / small Desktop  */
+      @media(min-width:1024px)and (max-width:1279px){
+        .grid-container{
+            height:143vh;
+            display: grid;
+            grid-template-columns:25% 25% 25% 25%;
+            justify-items: center;
+           background: rgba(245, 255, 246, 1);
+            padding: 2%;
+            row-gap: 2%;
+        }
+
+        .grid-container > div {
+            width:80%;
+            background-color:white;
+            text-align: center;
+            padding:8%; 
+            border-radius: 12px;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+            background: var(--White, rgba(255, 255, 255, 1));
+        }
+
+        .service-div-text{
+         text-align: left;
+         font-size: 0.4 rem;
+         margin-bottom: 3%;
+        }
+
+        .National-Emergency-Number{
+            font-size:0.8rem;
+        }
+        .National-Emergency{
+            font-size: 0.5rem;
+        }
+         .sevice-name{
+        width: 22%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        padding: 2%;
+        border-radius: 50px;
+        background: rgba(65, 255, 107, 0.1);
+        margin:1%;
+        font-size:0.5rem; 
+       }
+       .call-text{
+        text-align: left;
+        font-weight: 700;
+        font-size: 0.4;
+       }
+    }
+
